@@ -1,0 +1,27 @@
+[
+  {"name": "stata-runner", "kind": "executor", "responsibility": "Execute Stata do-files and return log output"},
+  {"name": "r-runner", "kind": "executor", "responsibility": "Execute R scripts and return output"},
+  {"name": "python-runner", "kind": "executor", "responsibility": "Execute Python scripts for econometric analysis"},
+  {"name": "latex-compiler", "kind": "executor", "responsibility": "Compile LaTeX documents and report errors"},
+
+  {"name": "number-verifier", "kind": "checker", "responsibility": "Cross-check hard-coded numbers in tex files against code output"},
+  {"name": "citation-checker", "kind": "checker", "responsibility": "Verify citations exist in bib file and are not fabricated"},
+  {"name": "integrity-guard", "kind": "checker", "responsibility": "Scan outputs for academic integrity concerns (fabrication, causality overstatement)"},
+  {"name": "mht-checker", "kind": "checker", "responsibility": "Check if multiple hypothesis testing corrections are needed and applied"},
+  {"name": "compilation-checker", "kind": "checker", "responsibility": "Verify LaTeX compiles with no undefined references or missing figures"},
+  {"name": "clustering-checker", "kind": "checker", "responsibility": "Verify standard error clustering matches the variation in treatment"},
+  {"name": "pretrend-checker", "kind": "checker", "responsibility": "Check pre-trend tests and parallel trends assumption validation"},
+  {"name": "first-stage-checker", "kind": "checker", "responsibility": "Verify IV first-stage F-statistics and relevance diagnostics"},
+  {"name": "placeholder-scanner", "kind": "checker", "responsibility": "Find leftover placeholders (XXX, TODO, ???) in paper drafts"},
+
+  {"name": "table-generator", "kind": "generator", "responsibility": "Generate publication-ready regression tables via estout/esttab"},
+  {"name": "figure-generator", "kind": "generator", "responsibility": "Generate publication-ready figures following economics conventions"},
+  {"name": "bib-manager", "kind": "generator", "responsibility": "Manage bibliography: check bib-tex consistency, find orphan entries"},
+  {"name": "template-engine", "kind": "generator", "responsibility": "Instantiate code templates with project-specific variable names"},
+  {"name": "replication-packager", "kind": "generator", "responsibility": "Generate replication package with master file and documentation"},
+  {"name": "balance-table-gen", "kind": "generator", "responsibility": "Generate balance tables using iebaltab or custom code"},
+  {"name": "summary-stats-gen", "kind": "generator", "responsibility": "Generate summary statistics tables for paper appendix"},
+  {"name": "dofile-header-gen", "kind": "generator", "responsibility": "Generate standardized do-file headers with globals and paths"},
+  {"name": "referee-report-gen", "kind": "generator", "responsibility": "Generate structured referee report from review protocol"},
+  {"name": "rr-response-gen", "kind": "generator", "responsibility": "Generate R&R response letter from referee comments"}
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "data",
+    "description": "Data preparation: cleaning, merging, descriptive statistics, balance tables",
+    "skill_sources": ["econ-coding-viz"],
+    "prerequisites": [],
+    "keywords": ["data", "clean", "merge", "describe", "summary", "statistics", "balance", "sample", "variable", "dataset", "observation", "missing", "outlier", "winsorize"]
+  },
+  {
+    "name": "analysis",
+    "description": "Econometric estimation: regressions, causal inference, identification strategies",
+    "skill_sources": ["econ-coding-viz"],
+    "prerequisites": ["data"],
+    "keywords": ["regress", "regression", "estimate", "effect", "impact", "causal", "coefficient", "fixed effect", "iv", "instrumental", "2sls", "did", "difference", "event study", "rdd", "discontinuity", "synthetic", "bunching", "shift-share", "bartik", "mht", "hypothesis", "treatment", "control", "endogen", "identify"]
+  },
+  {
+    "name": "viz",
+    "description": "Visualization: publication-ready figures, plots, and charts",
+    "skill_sources": ["econ-coding-viz"],
+    "prerequisites": ["analysis"],
+    "keywords": ["plot", "figure", "graph", "chart", "visualize", "coefficient plot", "coefplot", "event study plot", "binscatter", "rdd plot", "parallel trends", "forest plot", "scatter", "histogram", "density", "map"]
+  },
+  {
+    "name": "write",
+    "description": "Paper writing: abstract, introduction, model, data section, results, conclusion",
+    "skill_sources": ["econ-write"],
+    "prerequisites": ["analysis"],
+    "keywords": ["write", "draft", "abstract", "introduction", "intro", "model", "theory", "results", "conclusion", "section", "paragraph", "paper", "manuscript", "title", "literature", "review", "contribution", "roadmap"]
+  },
+  {
+    "name": "review",
+    "description": "Paper review: referee reports, self-review, R&R response, magnitude assessment",
+    "skill_sources": ["econ-review"],
+    "prerequisites": ["write"],
+    "keywords": ["review", "referee", "report", "revise", "resubmit", "r&r", "comment", "response", "reject", "accept", "magnitude", "credibility", "identification threat", "weakness", "strength", "suggestion"]
+  },
+  {
+    "name": "submit",
+    "description": "Pre-submission: compilation check, number verification, citation audit, formatting",
+    "skill_sources": ["pre-submission-check", "data-verify", "literature-search"],
+    "prerequisites": ["write", "review"],
+    "keywords": ["submit", "submission", "check", "verify", "compile", "latex", "citation", "reference", "format", "journal", "replication", "package", "number", "placeholder", "appendix"]
+  }
+]

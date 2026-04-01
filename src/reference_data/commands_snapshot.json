@@ -1,0 +1,43 @@
+[
+  {"name": "describe-data", "stage": "data", "responsibility": "Generate descriptive statistics and data overview", "source_skill": "econ-coding-viz", "template_hint": "stata/summary_stats.do"},
+  {"name": "clean-data", "stage": "data", "responsibility": "Clean and prepare raw data for analysis", "source_skill": "econ-coding-viz", "template_hint": "stata/clean_data.do"},
+  {"name": "merge-data", "stage": "data", "responsibility": "Merge multiple datasets with diagnostics", "source_skill": "econ-coding-viz", "template_hint": "stata/merge_data.do"},
+  {"name": "balance-table", "stage": "data", "responsibility": "Create treatment-control balance table using iebaltab", "source_skill": "econ-coding-viz", "template_hint": "stata/balance_table.do"},
+  {"name": "summary-stats", "stage": "data", "responsibility": "Generate publication-ready summary statistics table", "source_skill": "econ-coding-viz", "template_hint": "stata/summary_stats.do"},
+
+  {"name": "regress", "stage": "analysis", "responsibility": "Run regression with fixed effects using reghdfe + estout", "source_skill": "econ-coding-viz", "template_hint": "stata/reghdfe_main.do"},
+  {"name": "iv-2sls", "stage": "analysis", "responsibility": "Instrumental variables / 2SLS estimation with first-stage diagnostics", "source_skill": "econ-coding-viz", "template_hint": "stata/iv_2sls.do"},
+  {"name": "did", "stage": "analysis", "responsibility": "Difference-in-differences estimation", "source_skill": "econ-coding-viz", "template_hint": "stata/did.do"},
+  {"name": "staggered-did", "stage": "analysis", "responsibility": "Staggered DiD with modern estimators (Callaway-SantAnna, Sun-Abraham, etc.)", "source_skill": "econ-coding-viz", "template_hint": "stata/staggered_did.do"},
+  {"name": "event-study", "stage": "analysis", "responsibility": "Event study estimation with leads and lags", "source_skill": "econ-coding-viz", "template_hint": "stata/event_study.do"},
+  {"name": "rdd", "stage": "analysis", "responsibility": "Regression discontinuity design estimation", "source_skill": "econ-coding-viz", "template_hint": "stata/rdd.do"},
+  {"name": "synth-control", "stage": "analysis", "responsibility": "Synthetic control method estimation", "source_skill": "econ-coding-viz", "template_hint": "stata/synth_control.do"},
+  {"name": "bunching", "stage": "analysis", "responsibility": "Bunching estimation at kink/notch points", "source_skill": "econ-coding-viz", "template_hint": "stata/bunching.do"},
+  {"name": "shift-share", "stage": "analysis", "responsibility": "Shift-share / Bartik instrument estimation", "source_skill": "econ-coding-viz", "template_hint": "stata/shift_share.do"},
+  {"name": "mht-correction", "stage": "analysis", "responsibility": "Multiple hypothesis testing correction (Romano-Wolf, Bonferroni, etc.)", "source_skill": "econ-coding-viz", "template_hint": "python/romano_wolf.py"},
+
+  {"name": "coefficient-plot", "stage": "viz", "responsibility": "Generate coefficient plot with confidence intervals", "source_skill": "econ-coding-viz", "template_hint": "stata/coefplot.do"},
+  {"name": "event-study-plot", "stage": "viz", "responsibility": "Generate event study plot with pre/post-treatment periods", "source_skill": "econ-coding-viz", "template_hint": "stata/event_study_plot.do"},
+  {"name": "binscatter", "stage": "viz", "responsibility": "Create binned scatter plot with optional controls", "source_skill": "econ-coding-viz", "template_hint": "stata/binscatter.do"},
+  {"name": "rdd-plot", "stage": "viz", "responsibility": "Generate RDD plot with polynomial fit and discontinuity", "source_skill": "econ-coding-viz", "template_hint": "stata/rdd_plot.do"},
+  {"name": "parallel-trends", "stage": "viz", "responsibility": "Plot pre-treatment parallel trends for DiD validation", "source_skill": "econ-coding-viz", "template_hint": "stata/parallel_trends.do"},
+  {"name": "forest-plot", "stage": "viz", "responsibility": "Generate forest plot for heterogeneous treatment effects", "source_skill": "econ-coding-viz", "template_hint": "stata/forest_plot.do"},
+
+  {"name": "write-abstract", "stage": "write", "responsibility": "Draft paper abstract following What/How/Findings/Implications formula", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-intro", "stage": "write", "responsibility": "Draft introduction using Head/Evans/Bellemare method", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-model", "stage": "write", "responsibility": "Draft theoretical model section with propositions and testable predictions", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-data-section", "stage": "write", "responsibility": "Draft data section with source, sample construction, variable definitions", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-results", "stage": "write", "responsibility": "Draft results section: main result first, then robustness and mechanisms", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-conclusion", "stage": "write", "responsibility": "Draft conclusion: summary, limitations, implications, future research", "source_skill": "econ-write", "template_hint": ""},
+  {"name": "write-title", "stage": "write", "responsibility": "Generate paper title following Impact/Evidence format", "source_skill": "econ-write", "template_hint": ""},
+
+  {"name": "referee-report", "stage": "review", "responsibility": "Generate constructive referee report with 5-step protocol", "source_skill": "econ-review", "template_hint": ""},
+  {"name": "self-review", "stage": "review", "responsibility": "Run self-review using Top 10 rejection reasons checklist", "source_skill": "econ-review", "template_hint": ""},
+  {"name": "rr-response", "stage": "review", "responsibility": "Draft R&R response letter with comment triage strategy", "source_skill": "econ-review", "template_hint": ""},
+  {"name": "magnitude-check", "stage": "review", "responsibility": "Assess economic magnitude of effects against domain benchmarks", "source_skill": "econ-review", "template_hint": ""},
+
+  {"name": "pre-submit-check", "stage": "submit", "responsibility": "Run comprehensive 3-level pre-submission checklist", "source_skill": "pre-submission-check", "template_hint": ""},
+  {"name": "verify-numbers", "stage": "submit", "responsibility": "Cross-check hard-coded numbers in LaTeX against code output", "source_skill": "data-verify", "template_hint": ""},
+  {"name": "check-citations", "stage": "submit", "responsibility": "Verify all citations exist in bib file and are not fabricated", "source_skill": "literature-search", "template_hint": ""},
+  {"name": "check-compilation", "stage": "submit", "responsibility": "Verify LaTeX compiles cleanly with no undefined references", "source_skill": "pre-submission-check", "template_hint": ""}
+]
