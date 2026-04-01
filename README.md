@@ -8,6 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tests: 46 passing](https://img.shields.io/badge/tests-46%20passing-brightgreen.svg)](tests/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-orange.svg)]()
+[![GitHub Stars](https://img.shields.io/github/stars/Annie-EconAI/Econ-Claw-Code?style=social)](https://github.com/Annie-EconAI/Econ-Claw-Code)
 
 [English](README.md) | [中文](README_CN.md)
 
